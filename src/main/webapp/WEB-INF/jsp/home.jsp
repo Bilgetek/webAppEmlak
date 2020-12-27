@@ -5,18 +5,20 @@
     <link href="/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="/css/custom/sidebar.css" rel="stylesheet" type="text/css"/>
     <link href="/css/custom/card.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <script src="/js/fontawesome/solid.js" type="text/javascript"></script>
     <script src="/js/fontawesome/fontawesome.js" type="text/javascript"></script>
-    <title>VetApp</title>
+    <script src="/js/fontawesome/fontawesome.js" type="text/javascript"></script>
+    <title>EmlakApp</title>
 </head>
 <body class="bg-custom">
 
 <div class="wrapper">
     <!-- Sidebar  -->
     <nav id="sidebar">
-        <div class="sidebar-header text-center text-decoration-underline">
-            <a href="/home" class="h3">EmlakApp</a>
+        <div class="sidebar-header text-center">
+            <a href="/home" class="h3">Asuman Şerzan Tatar</a>
         </div>
         <hr/>
         <ul class="list-unstyled components">
@@ -81,6 +83,24 @@
             </div>
         </nav>
 
+        <div class="w3-content" style="max-width:1200px">
+            <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;display:none">
+            <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%">
+            <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;display:none">
+
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                </div>
+                <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                </div>
+                <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <h2 class="text-center">Yeni bir ev mi arıyorsunuz?</h2>
         </div>
@@ -92,6 +112,7 @@
 <script src="/js/custom/popper.min.js" type="text/javascript"></script>
 <script src="/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
 <script src="/js/custom/common.js" type="text/javascript"></script>
+<script src="/js/custom/w3.js" type="text/javascript"></script>
 
 </body>
 </html>
