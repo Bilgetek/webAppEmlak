@@ -71,7 +71,7 @@ a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #54d2aa;
+    border-bottom: 1px solid #000000;
 }
 
 #sidebar ul p {
@@ -187,4 +187,11 @@ a.article:hover {
     height: 60px;
     text-align: center;
     word-wrap: break-word;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
 }

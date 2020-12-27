@@ -10,6 +10,10 @@
     <script src="/js/fontawesome/solid.js" type="text/javascript"></script>
     <script src="/js/fontawesome/fontawesome.js" type="text/javascript"></script>
     <script src="/js/fontawesome/fontawesome.js" type="text/javascript"></script>
+    <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD-pJ69r9TX8g7N8vw21CRLmrgtODV03g&callback=initMap">
+    </script>
+
     <title>EmlakApp</title>
 </head>
 <body class="bg-custom">
@@ -66,11 +70,13 @@
                     <i class="fas fa-align-justify"></i>
                 </button>
 
+                <h1 style="text-align: center">Emlak Şirketi</h1>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/home">Ana sayfa</a>
+                            <a class="nav-link" href="/home">Anasayfa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/owner/owners">Evler</a>
@@ -84,27 +90,47 @@
         </nav>
 
         <div class="w3-content" style="max-width:1200px">
-            <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;display:none">
-            <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%">
-            <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;display:none">
+            <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg"
+                 style="width:100%;display:none">
+            <img class="mySlides" src="https://www.w3schools.com/w3css/img_snow_wide.jpg" style="width:100%">
+            <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg"
+                 style="width:100%;display:none">
 
             <div class="w3-row-padding w3-section">
                 <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                    <img class="demo w3-opacity w3-hover-opacity-off"
+                         src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer"
+                         onclick="currentDiv(1)">
                 </div>
                 <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                    <img class="demo w3-opacity w3-hover-opacity-off"
+                         src="https://www.w3schools.com/w3css/img_snow_wide.jpg" style="width:100%;cursor:pointer"
+                         onclick="currentDiv(2)">
                 </div>
                 <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                    <img class="demo w3-opacity w3-hover-opacity-off"
+                         src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer"
+                         onclick="currentDiv(3)">
                 </div>
             </div>
         </div>
 
         <div class="container">
             <h2 class="text-center">Yeni bir ev mi arıyorsunuz?</h2>
+            <hr/>
+            <div>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum."
+            </div>
         </div>
 
+        <hr/>
+
+        <!--The div element for the map -->
+        <div id="map"></div>
     </div>
 </div>
 
